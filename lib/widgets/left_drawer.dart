@@ -16,7 +16,7 @@ class LeftDrawer extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'RADKICKS',
+                  'Football News',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
@@ -75,6 +75,7 @@ class LeftDrawer extends StatelessWidget {
   }
 }
 
+// untuk melengkapi TODO (placeholder)
 class NewsListPage extends StatelessWidget {
   const NewsListPage({super.key});
 

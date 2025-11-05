@@ -72,7 +72,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                 child: TextFormField(
                   maxLines: 5,
                   decoration: InputDecoration(
-                    hintText: 'Isi Berita',
+                    hintText: 'Masukkan Isi Berita',
                     labelText: 'Isi Berita',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
@@ -101,7 +101,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                   ),
-                  value: _category,
+                  initialValue: _category,
                   items: _categories
                       .map(
                         (cat) => DropdownMenuItem(
@@ -155,7 +155,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.indigo),
+                      backgroundColor: WidgetStateProperty.all(Colors.indigo),
                     ),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
@@ -163,7 +163,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                           context: context,
                           builder: (context) {
                             return AlertDialog(
-                              title: const Text('Produk berhasil tersimpan'),
+                              title: const Text('Berita berhasil disimpan!'),
                               content: SingleChildScrollView(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,

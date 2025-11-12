@@ -44,7 +44,7 @@ class NewsEntryCard extends StatelessWidget {
 
                 // Title
                 Text(
-                  news.title + (news.thumbnail ?? ""),
+                  news.title,
                   style: const TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
